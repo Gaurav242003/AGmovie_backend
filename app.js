@@ -4,7 +4,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const cors = require("cors");
-
+const PORT=process.env.PORT || 8000;
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const saltRounds = 10;
@@ -15,7 +15,7 @@ app.use(cors());
 app.use(express.json());
 mongoose.set('strictQuery', true);
 const mypass=process.env.ATLAS_PASSWORD;
-mongoose.connect(`mongodb://127.0.0.1:27017/agDB`);
+mongoose.connect(`mongodb+srv://agmovies:${mypass}@agmovies.zjhbsiv.mongodb.net/agDB`);
 
 const userSchema = new mongoose.Schema({
     userName: String,
@@ -227,6 +227,6 @@ setInterval(() => {
 
 }, 1000);
 
-app.listen(8000, function () {
-    console.log("Server started on port 8000.");
+app.listen(PORT, function () {
+    console.log(`Server started on port ${PORT}.`);
 });
