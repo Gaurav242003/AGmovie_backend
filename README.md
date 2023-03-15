@@ -6,6 +6,7 @@ The title of our project is - Movie Voting Platform, which is named as "AGmovies
 
 
 # Hosted URL
+ https://agmovies.netlify.app/
 
 # Features Implemented
 ## Frontend
