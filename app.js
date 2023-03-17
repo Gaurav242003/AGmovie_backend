@@ -227,7 +227,7 @@ setInterval(() => {
     let sec = currentDate.getSeconds();
 
 
-    if (hours === 0 && min === 0 && sec === 0) {
+    if (hours === 23 && min === 59 && sec === 59) {
         Nomination.deleteMany({}, (err) => {
             if (err)
                 console.log(err);
