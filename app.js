@@ -158,6 +158,24 @@ app.post("/nominate", (req, res) => {
     })
 })
 
+app.post("/count", (req, res) => {
+    const newusername = req.body.userName;
+    const temparr=[];
+    console.log("hi");
+    Nomination.findOne({ userName: newusername }, function (err, found) {
+        if (!err) {
+            if (found) {
+                res.json({ votedmovie: found.movieId });
+                console.log("hi");
+            } else {
+                res.json({ votedmovie: temparr });
+                console.log("hi2");
+            }
+        } else {
+        }
+    })
+})
+
 app.get("/databaseCall", (req, res) => {
     Nomination.find({}, function (err, found) {
         if (!err) {
