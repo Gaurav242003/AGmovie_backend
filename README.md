@@ -1,6 +1,6 @@
 # Project Title
 
-The title of our project is - Movie Voting Platform, which is named as "AGmovies". It is a website on which users can sign up to nominate at most 5 movies in a contest which runs for 24 hours everyday. Users can search for movies, watch trailer, see the movies nominated by them and also the leaderboard for current contest. After every 24 hours, a new contest begins with a new leaderboard.
+The title of our project is - Movie Voting Platform, which is named as "AGmovies". It is a website on which users can sign up to nominate at most 5 movies in a contest which runs for 24 hours everyday. Users can search for movies, watch trailer, see the movies nominated by them and also the leaderboard for current contest. We have used APIs provided by TMDB to gather details of the movies. After every 24 hours, a new contest begins with a new leaderboard.
 
 # Screenshots
 
